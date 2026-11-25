@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reg1.css">
+   
+    <title>Registration Form</title>
+</head>
+<body>
+   <form class="form-card">
+   <h1>Registration Form</h1>
+   <p class="sub">fill in your details below.</p>
+   <div class="field">
+    <!--full name field-->
+    <label class="title">Full Name <span class="text-danger">*</span></label>
+    <input type="text" id="Full Name" placeholder="Enter your full Name" required></div>
+    <!--Password field-->
+    <div class="field">
+        <label class="title">Password <span class="text-danger">*</span></label>
+        <input type="Password" id="Password" placeholder="Enter your Password" required>
+
+    </div>
+    <!--adress field-->
+<div class="field">
+        <label class="title">Address <span class="text-danger">*</span></label>
+        <input type="text" id="Address" placeholder="Enter your Address" required>
+</div>
+<!-- District Field -->
+ <div class="field">
+    <label class="title">Select District<span class="text-danger">*</span></label>
+    <select id="district" required>
+        <option value="" selected disabled>Select your District</option>
+        <option value="Arghakhanchi">Arghakhanchi</option>
+        <option value="Kathmandu">Kathamndu</option>
+        <option value="Gulmi">Gulmi</option>
+    </select>
+
+ </div>
+ <!-- date of birth field -->
+  <div class="field">
+        <label class="title">Date of Birth<span class="text-danger">*</span></label>
+        <input type="date" id="DOB" placeholder="MM/DD/YYYY" required>
+</div>
+<!-- Gender field -->
+ <fieldset>
+    <span class="legend">Gender<span class="text-danger">*</span></span>
+    <div class="options">
+        <label class="option">
+            <input type="radio" value="Male"  name="gender" /> <span>Male</span>
+        </label>
+        <label class="option">
+            <input type="radio" value="female"  name="gender" /> <span>Female</span>
+
+        </label>
+    </div>
+ </fieldset>
+
+          <!-- Hobbies Section  -->
+           <fieldset>
+    <span class="legend">Hobbies<span class="text-danger">*</span></span>
+    <div class="options">
+        <label class="option">
+            <input type="checkbox" value="table-tennis"  name="sports" /> <span>Table-Tennis</span>
+        </label>
+        <label class="option">
+            <input type="checkbox" value="cricket"  name="sports" /> <span>cricket</span>
+
+        </label>
+        <label class="option">
+            <input type="checkbox" value="chess" name="sports" /> <span>Chess</span>
+                </label>
+    </div>
+ </fieldset>
+ <!-- Message field -->
+<div class="field">
+        <label class="title">Message</label>
+        <textarea id="Message" placeholder="Write youe Message here...." required></textarea>
+</div>
+    <!-- Buttons field -->
+     <div class="Buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+         
+     </div>
+   </form> 
+</body>
+</html>
